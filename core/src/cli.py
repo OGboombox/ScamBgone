@@ -3,10 +3,11 @@ from core.src.detector import Rulepack, decide
 
 def main():
     try:
-        with open("examples.json","r",encoding="utf-8") as f:
+        with open("rulepack.json","r",encoding="utf-8") as f:
             rp = Rulepack(**json.load(f))
     except Exception:
          rp = Rulepack.default()
+    #Below exists to test exeption.json
     except Exception:
         print("An error occurred. Exiting.")
         sys.exit()
