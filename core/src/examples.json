@@ -1,0 +1,6 @@
+[
+  {"text":"URGENT: Verify at http://tiny.cc/login", "want":"JUNK"},
+  {"text":"Reminder: your appointment is tomorrow at 3pm.", "want":"ALLOW"},
+  {"text":"Click http://bit.ly/win-now", "want":"JUNK"},
+  {"text":"Hello from Example.com", "want":"ALLOW"}
+]
