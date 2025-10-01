@@ -1,6 +1,5 @@
 import json, sys
 from core.src.detector import Rulepack, decide
-
 def test_allows_normal_message():
     rp = Rulepack.default()
     assert decide("Your code is 123456. Do not share.", rp).startswith("ALLOW")
