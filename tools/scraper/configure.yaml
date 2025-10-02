@@ -1,0 +1,26 @@
+user_agent: "ScamawayBot/0.1 (+contact: you@example.com)"
+delay_seconds: 2
+timeout_seconds: 15
+out_csv: "scraped/scam_texts.csv"
+
+sources:
+  # Example: a static HTML page with a table of scam examples
+  - name: "Example Scam Table"
+    url: "https://example.com/scam-table"
+    type: "table"          # uses pandas.read_html
+    table_index: 0         # which table on the page (0 = first)
+    text_column: 1         # which column contains the message
+    label: "spam"
+
+  # Example: a page with <li> or <div> items you can select
+  - name: "Example Scam List"
+    url: "https://example.com/scam-list"
+    type: "list"           # uses BeautifulSoup + CSS selector
+    selector: "ul.examples li"
+    label: "spam"
+
+  # Example: full article (optional)
+  - name: "Example Article"
+    url: "https://example.com/scam-article"
+    type: "article"        # readability to extract main content
+    label: "spam"
