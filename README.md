@@ -41,3 +41,5 @@ a
 I want more development tools.
 
 I need a tool, possibly ML, that can sort through web scraped tables of "scam mail" and determine which words should be classified as "likely scam" word sequences. Additionally,  I need it take the sorted data and assign it a float value based on the "bad" words severity
+
+I've learned that statiscal learning is one of the ways I can keep make my app "light-weight" enough to interface with IOS.
