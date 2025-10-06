@@ -1,5 +1,6 @@
 # ScamBgone
-An IOS message anti-scam filter for SMS/MMS
+An IOS message anti-scam filter for SMS/MMS.
+
 vibe coding my way to understanding and getting rid of these damn scam texts.
 
 **Using this as my public "to-do" list and vision board**
